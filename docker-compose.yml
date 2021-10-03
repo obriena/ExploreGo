@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  goservice:
+    image: flyingspheres/devgoservice:1.0
+
+    volumes:
+      - /Users/aaronobrien/Desarrollo/Go/goDocker:/testService
+    working_dir: /testService\
+    ports:
+      - 8889:8889
